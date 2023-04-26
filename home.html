@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        background-image: url('images/bk2.png');
+        margin: 0;
+        background-color: #F5F5F5;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 160vh;
+        min-height: 500px;
+    }
+    
+    .header {
+
+padding: 10px;
+display: flex;
+flex-wrap: wrap;
+<!---- border: 1px solid green;---->
+}
+
+.box1 {
+            flex: 1;
+            margin-left: 30px;
+       <!---    border: 1px solid green;--> 
+            padding: 30px;
+            height: 40px;
+            margin: 0px;
+            width: 50;
+            overflow: hidden;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+.box1 img {
+max-width: 100%;
+height: auto;
+}
+
+.box2 {
+flex: 1;
+margin-left: 20px;
+<!----- border: 1px solid green; ---->
+padding: 0px;
+margin: 0px;
+width: 80;
+text-align: right;
+max-width: 100%;
+height: auto;
+}
+
+.nav {
+         <!---  border: 1px solid green;---> 
+
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 15px;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: px;
+           <!-- border: 1px solid green;--->
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .contentbox2 {
+    flex: 2;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid green;
+}
+
+.contentbox2 img {
+    max-width: 40%;
+    max-height: 40%;
+    object-fit: contain;
+    align-self:;
+    margin: auto;
+}
+    /* 미디어 쿼리 추가 */
+    @media (max-width: 768px) {
+        .contentbox2 {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .p {text-align: center; }
+
+    .p1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 60px; /* or use padding-top: 20px; to add space */
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="box1">
+          <a href="index.html" > <img src="images/tt.png" /></a>
+            
+        </div>
+        <div class="box2">
+            <h6></h6>
+        </div>
+        <ul class="nav">
+            <li><a href="home.html">실험실이란</a></li>
+            <li><a href="about.html">토마토에 대해</a></li>
+            <li><a href="#clients">추천 토마토</a></li>
+            <li><a href="#contact">토마토 활용방법</a></li>
+
+        </ul>
+    </div>
+    <div class="content">
+        <div class="contentbox2"> <img src="images/b4.png" />
+            
+        </div>
+   
+    </pre>
+    </div>
+    <p class="p1"> 토마토 실험실이란?</p>
+    <p class="p">여기는 새콤박사의 토마토 실험실이에요.</p>
+    <p class="p">혹시 토마토 좋아하시나요? 세상에는 정말 많은 토마토들이 있지요.</p>
+    <p>    </p>
+    <p class="p">토마토 실험실에서 당신만의 토마토를 찾아드린답니다.</p>
+    <p class="p">지금 당장 토마토 실험실에서 당신만의 토마토를 찾아보세요!</p>
+    
+    <p class="p1"> "토마토에 잘 모른다면 토마토에 대해 한 번 알아볼까요?"   </p>
+
+    <div class="content"><a href="about.html"><img src="images/to.png" style="width: 100px;"></a></div>
+</body>
+</html>

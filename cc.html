@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nav bar</title>
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+       
+
+    <style>
+        .header {
+            padding: 30px;   
+            border: 1px solid green;
+            margin-bottom: 70px;
+            text-align: center;
+            font-size: 70px;
+            
+        }
+
+        .section {
+            padding: 30px;   
+            
+            margin-bottom: 40px;
+            margin-left: 70px;
+            margin-right: 70px;
+            height: 400px;
+            overflow: hidden; 
+
+        }
+        
+        .section header {
+            padding: 30px;   
+            
+            margin-bottom: 40px;
+            
+            
+            
+        }
+        
+        .section .main-container {
+            display: flex;
+            justify-content: flex-start;
+            
+            
+        }
+        
+        .section main {
+            flex: calc(50% - 30px);
+            height:  700px;  
+            
+            margin: 20px;
+            margin-bottom: 50px;
+            padding: 5px;
+            background-color: rgb(255, 69, 69);
+            border-radius: 10px;
+        }
+
+        .box1 { 
+            height:  85%;  
+            border: 1px solid rgb(0, 0, 0);
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+        
+        .box2 { 
+            height:  15%;  
+            border: 1px solid rgb(0, 0, 0);
+            text-align: center;
+            padding:40px;
+            background-color: white;
+            border-bottom-left-radius:10px ;
+            border-bottom-right-radius:10px ;
+        }
+
+        .footer {
+            padding: 60px;   
+            border: 1px solid green;
+            margin-top: 15px;
+        }
+       
+
+        @media screen and (min-width: 1024px) {
+            }
+
+            .section main {
+                flex: 100%;
+             
+                
+            }
+         .section {
+                font-size: 20px;
+                height: 80%;
+                height: 1900px;
+                margin: 10px;
+                margin-bottom: 20px;
+
+            }
+         .header {
+            font-size: 50px;
+         }   
+
+
+
+        @media screen and (max-width: 768px) {
+            .section .main-container {
+                flex-direction: column;
+               
+            }
+
+            .section main {
+                flex: 100%;
+                
+            }
+         .section {
+                font-size: 20px;
+                margin: 0%;
+                height: 4000px;
+
+            }
+         .header {
+            font-size: 50px;
+         }   
+
+            
+        }
+
+        @media screen and (max-width: 375px) {
+            .section main {
+                margin: 10px;
+                margin-bottom: 20px;
+                height: 40%;
+                font-size: 140%;
+            }
+
+            .section {
+                font-size: 20px;
+                margin: 0%;
+                height: 2700px;
+
+            }
+
+        }
+    
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        
+        <div class="navbar__logo">
+          
+          <a href="index.html">토마토 실험실</a>
+        </div>
+        
+        <ul class="navbar__menu">
+          <li><a href="home.html">실험실이란</a></li>
+          <li><a href="about.html">토마토에 대해</a></li>
+          <li><a href="cc.html">추천 토마토</a></li>
+          <li><a href="">토마토 활용법</a></li>
+        </ul>
+       
+       
+        <a href="#" class="navbar__toggleBtn">
+          <i class="fas fa-bars"></i>
+        </a>
+      </nav> 
+      
+    
+   
+    <div class="section">
+        <div class="header">
+            <hr>당신의 토마토를 찾아보세요<hr></div>
+        
+            <div class="main-container">
+                <main class="section main"> 
+                    <div class="box1"><img src="images/qkddnf.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box2"> 방울 토마토</div></main>
+                <main class="section main">
+                    <div class="box1"><img src="images/dhkstnr.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box2"> 완숙 토마토</div></main>
+                </main>
+                <main class="section main">
+                    <div class="box1"><img src="images/qkddnf.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box2"> 흑 토마토</div></main>
+                </main> 
+                
+            </div>
+            <div class="main-container">
+                <main class="section main">
+                    <div class="box1"><img src="images/qkddnf.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box2"> 대추 토마토</div></main>
+                </main>
+                <main class="section main">
+                    <div class="box1"><img src="images/tmsor.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box2"> 스낵 토마토</div></main>
+                </main>
+                <main class="section main">
+                    <div class="box1"><img src="images/Wkq.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box2"> 짭짤이 토마토</div></main></main> 
+        </div>
+    </div>
+    
+    <div class="footer"></div>
+</body>
+<script src="dd.js" defer></script>
+</html>

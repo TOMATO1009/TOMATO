@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Nav bar</title>
+  <script
+    src="https://kit.fontawesome.com/2d323a629b.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Document</title>
 <style>
     body {
-        background-image: url('images/bk2.png');
-        margin: 0;
-        background-color: #F5F5F5;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        height: 160vh;
-        min-height: 500px;
+      background-image: url(images/bk2.png);
+    margin: 0;
+    background-color: #F5F5F5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 조선굴림체;
+      font-size: 15px;
+}
+    @media (max-width: 1000px) {
+    body {
+        background-size: contain;
+        height: 150vh;
     }
-    
+}
+@media (max-width: 800px) {
+    body {
+        background-image: none;
+    }
+}
+    @media (max-width: 930px) {
+    body {
+        background-size: contain;
+        height: 150vh;
+    }
+}
     .header {
 
 padding: 10px;
@@ -56,20 +79,22 @@ max-width: 100%;
 height: auto;
 }
 
-.nav {
-         <!---  border: 1px solid green;---> 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
 
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+.flex-container > li {
+  
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+  
+  font-size: 15px;
+  
+}
 
-        .nav li {
-            display: inline-block;
-            font-size: 15px;
-            padding: 20px;
-        }
         .content {
             padding: 20px;
             display: flex;
@@ -80,8 +105,14 @@ height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-
+            
         }
+        @media (max-width: 700px) {
+    .contentbox2 {
+      max-width: 150%;
+    max-height: 100%;
+    }
+}
         .contentbox2 {
     flex: 2;
     display: flex;
@@ -93,49 +124,86 @@ height: auto;
 }
 
 .contentbox2 img {
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 50%;
+    max-height: 100%;
     object-fit: contain;
-    align-self:;
+   
     margin: auto;
 }
-    /* 미디어 쿼리 추가 */
-    @media (max-width: 768px) {
-        .contentbox2 {
-            width: 100%;
+  
+    @media (max-width:320px) {
+        .contentbox2 img {
+            width: 900px;
+            height: auto;
+        }
+    }
+    @media (min-width: 900px) {
+        .contentbox2 img {
+            width: 2000px;
             height: auto;
         }
     }
     .p {text-align: center; }
+    @media screen and (min-width: 600px) {
+  .p {
+    font-size: 20px;
+  }
+}
 
+@media screen and (max-width: 700px) {
+  .p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .p {
+    font-size: 12px;
+  }
+}
     .p1 {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    margin-top: 60px; /* or use padding-top: 20px; to add space */
+    margin-top: 60px;
 }
- 
+
+    
+
+@media screen and (max-width: 700px) {
+  .p1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .p1 {
+    font-size: 15px;
+  }
+}
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="box1">
-          <a href="index.html" > <img src="images/tt.png" /></a>
-            
-        </div>
-        <div class="box2">
-            <h6></h6>
-        </div>
-        <ul class="nav">
-            <li><a href="home.html">실험실이란</a></li>
-            <li><a href="about.html">토마토에 대해</a></li>
-            <li><a href="#clients">추천 토마토</a></li>
-            <li><a href="#contact">토마토 활용방법</a></li>
-
-        </ul>
+  <nav class="navbar">
+        
+    <div class="navbar__logo">
+      
+      <a href="index.html">토마토 실험실</a>
     </div>
+    
+    <ul class="navbar__menu">
+      <li><a href="home.html">실험실이란</a></li>
+      <li><a href="about.html">토마토에 대해</a></li>
+      <li><a href="">추천 토마토</a></li>
+      <li><a href="">토마토 활용법</a></li>
+    </ul>
+   
+   
+    <a href="#" class="navbar__toggleBtn">
+      <i class="fas fa-bars"></i>
+    </a>
+  </nav>
+
     <div class="content">
-        <div class="contentbox2"> <img src="images/b4.png" />
+        <div class="contentbox2"> <img src="images/b41.jpg" />
             
         </div>
    
@@ -150,6 +218,7 @@ height: auto;
     
     <p class="p1"> "토마토에 잘 모른다면 토마토에 대해 한 번 알아볼까요?"   </p>
 
-    <div class="content"><a href="about.html"><img src="images/to.png" style="width: 100px;"></a></div>
+    <div class="content"><a href="about.html"><img src="images/TOm.png" style="width: 100px;"></a></div>
 </body>
+<script src="dd.js" defer></script>
 </html>

@@ -1,0 +1,153 @@
+/* Global */
+:root {
+    --text-color: #521212;
+    --background-color: #ffffff;
+    --accent-color: #ffbf83;
+  }
+  
+  * {
+  
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 조선굴림체;
+        margin: 0;
+        background-color: #F5F5F5;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 90vh;
+        min-height: 500px;
+        font-family: 조선굴림체;
+          font-size: 15px;
+        
+    
+  }
+  @media (max-width: 767px) {
+    body {
+        background-size: contain;
+    }
+}
+
+        .content {
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 80px;
+        
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .contentbox2 {
+    flex: 2;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+           
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.contentbox2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+    
+    @media (max-width: 768px) {
+        .contentbox2 {
+            width: 100%;
+            height: auto;
+        }
+    }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: var(--background-color);
+  }
+  
+
+  .navbar__logo {
+    font-size: 24px;
+    color: var(--text-color);
+  }
+  
+  .navbar__logo i {
+    color: var(--accent-color);
+  }
+  
+
+  .navbar__menu {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .navbar__menu li {
+    padding: 8px 12px;
+  }
+  
+  .navbar__menu li:hover {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+  }
+  
+
+  .navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+   
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
+    }
+  
+
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .navbar__menu a {
+    
+      display: block;
+    }
+  
+
+    .navbar__toggleBtn {
+      display: block;
+    }
+  
+    
+    .navbar__menu.active,
+    .navbar__icons.active {
+      display: flex;
+    }
+  }

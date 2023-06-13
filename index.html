@@ -1,157 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nav bar</title>
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    
     <style>
-       
-       body {
-    background-image: url('images/bk.png');
+    body {
+      background-image: url(images/xhxh.png);
     margin: 0;
     background-color: #F5F5F5;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     min-height: 500px;
+    font-family: 조선굴림체;
+      font-size: 15px;
 }
-
-/* 모바일 화면에서 이미지가 축소되지 않고 원본 크기로 보이도록 설정 */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     body {
         background-size: contain;
+        height: 110vh;
     }
 }
 
-        .header {
-
-            padding: 10px;
-            display: flex;
-            flex-wrap: wrap;
-        <!---    border: 1px solid green;-->
-        }
-
-        .box1 {
-            flex: 1;
-            margin-left: 30px;
-       <!---    border: 1px solid green;--> 
-            padding: 30px;
-            height: 40px;
-            margin: 0px;
-            width: 50;
-            overflow: hidden;
-            display: flex;
-            justify-content: left;
-            align-items: center;
-        }
-
-        .box1 img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .box2 {
-            flex: 1;
-            margin-left: 20px;
-       <!--    border: 1px solid green;---> 
-            padding: 0px;
-            margin: 0px;
-            width: 80;
-            text-align: right;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .nav {
-        <!---    border: 1px solid green;-->
-
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav li {
-            display: inline-block;
-            font-size: 15px;
-            padding: 20px;
-        }
-
-        .content {
-            padding: 40px;
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 80px;
-        <!---   border: 1px solid green;-> 
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .contentbox2 {
-    flex: 2;
-    display: flex;
-    width: 100%;
-    height: 500px;
-    padding: 15px;
-           
-    justify-content: center;
-    align-items: center;
-   <!--- border: 1px solid green;-->
-}
-
-.contentbox2 img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-    /* 미디어 쿼리 추가 */
-    @media (max-width: 768px) {
-        .contentbox2 {
-            width: 100%;
-            height: auto;
-        }
+@media (max-width: 1023px) and (max-width: 768px) {
+    body {
+      background-size: contain;
+        height: 50vh;
     }
+}
+@media (max-width: 425px) {
+    body {
+        background-size: contain;
+        height: 130vh;
+        background-image: url(images/xhxhak.png);
+    }
+}
+@media (max-width: 375px) {
+    body {
+        background-size: contain;
+        height: 120vh;
+        background-image: url(images/xhxhak.png);
+    }
+}
 
-      
+@media (max-width: 1024px) {
+  .contentbox2 img {
+    width: 55%;
+    max-width: none;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 4225px) {
+  .contentbox2 img {
+    width: 70%;
+    max-width: none;
+    height: auto;
+  }
+}
 
     </style>
 </head>
 
-<body>
-    <div class="header">
-        <div class="box1">
-            <img src="images/tt.png" />
-            
-        </div>
-        <div class="box2">
-            <h6></h6>
-        </div>
-        <ul class="nav">
-            <li><a href="home.html">실험실이란</a></li>
-            <li><a href="#about">토마토에 대해</a></li>
-            <li><a href="#clients">추천 토마토</a></li>
-            <li><a href="#contact">토마토 활용방법</a></li>
 
-        </ul>
-    </div>
-    <pre>
-    <div class="content">
- 
-        <div class="contentbox2"> <img src="images/hi.png" style="min-width 100%; max-height: 100%; object-fit: contain;" />
-        </div>
+    <body>
+    
+        <nav class="navbar">
         
-       
-       
-    </div></pre>
+          <div class="navbar__logo">
+            
+            <a href="index.html"><span style="color: red;" >●</span>  토마토 실험실</a>
+          </div>
+          
+          <ul class="navbar__menu">
+            <li><a href="home.html">실험실이란</a></li>
+            <li><a href="about.html">토마토에 대해</a></li>
+            <li><a href="cc.html">추천 토마토</a></li>
+            <li><a href="">토마토 활용법</a></li>
+          </ul>
+         
+         
+          <a href="#" class="navbar__toggleBtn">
+            <i class="fas fa-bars"></i>
+          </a>
+        </nav>
+    
+    
+    <div class="content">
+        <div class="contentbox2"> 
+            <img src="images/hi.png" style="min-width 100%; max-height:100%; object-fit: contain;" />
+        </div>
+          </div>
 
 </body>
-
+<script src="dd.js" defer></script>
+    
 </html>
 

@@ -181,12 +181,12 @@ height: auto;
 }
 
     
-
 @media screen and (max-width: 700px) {
   .p1 {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .p1 {
     font-size: 15px;
@@ -197,7 +197,11 @@ height: auto;
             background-color: white;
             margin-top: 15px;
             text-align: center;
-        }
+        }@media (max-width: 700px) {
+  .footer {
+    display: none;
+  }
+}
     </style>
 </head>
 <body>
@@ -239,6 +243,7 @@ height: auto;
     <p class="p1"> "토마토에 잘 모른다면 토마토에 대해 한 번 알아볼까요?"   </p>
 
     <div class="content"><a href="about.html"><img src="images/TOm.png" style="width: 100px;"></a></div>
+    
     <div class="footer"> ⓒ2023 Seo Ji-yeon All pictures cannot be copied sithout permission. </div>
 </body>
 <script src="dd.js" defer></script>

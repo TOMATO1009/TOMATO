@@ -23,13 +23,14 @@
     font-family: 조선굴림체;
       font-size: 15px;
 }
-    @media (max-width: 1000px) {
+    @media (max-width: 1468px) {
     body {
         background-size: contain;
-        height: 150vh;
+        background-image: url(images/bk22.png);
+        height: 190vh;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 925px) {
     body {
         background-image: none;
     }
@@ -45,13 +46,13 @@
 padding: 10px;
 display: flex;
 flex-wrap: wrap;
-<!---- border: 1px solid green;---->
+
 }
 
 .box1 {
             flex: 1;
             margin-left: 30px;
-       <!---    border: 1px solid green;--> 
+       
             padding: 30px;
             height: 40px;
             margin: 0px;
@@ -70,7 +71,7 @@ height: auto;
 .box2 {
 flex: 1;
 margin-left: 20px;
-<!----- border: 1px solid green; ---->
+
 padding: 0px;
 margin: 0px;
 width: 80;
@@ -99,8 +100,8 @@ height: auto;
             padding: 20px;
             display: flex;
             flex-wrap: wrap;
-            margin-top: px;
-           <!-- border: 1px solid green;--->
+            
+          
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -116,28 +117,40 @@ height: auto;
         .contentbox2 {
     flex: 2;
     display: flex;
-    width: 300%;
-    height: 100%;
+    width: 300px;
+    height: 800px;
     justify-content: center;
     align-items: flex-start;
-   <!---- border: 1px solid green;--->
+ 
 }
 
 .contentbox2 img {
-    max-width: 50%;
-    max-height: 100%;
+    width: 5000px;
+    height: 5000px;
+  
     object-fit: contain;
    
-    margin: auto;
 }
-  
-    @media (max-width:320px) {
+
+@media (max-width: 768px) {
+        .contentbox2  {
+            
+            height: 500px;
+        }
+    }
+    @media (max-width: 768px)and (max-width: 426px){
         .contentbox2 img {
-            width: 900px;
+            width: 2000px;
             height: auto;
         }
     }
-    @media (min-width: 900px) {
+    @media (max-width: 425px) {
+        .contentbox2  {
+            
+            height: 250px;
+        }
+    }
+    @media (max-width: 425px) {
         .contentbox2 img {
             width: 2000px;
             height: auto;
@@ -179,6 +192,12 @@ height: auto;
     font-size: 15px;
   }
 }
+.footer {
+            padding: 10px;   
+            background-color: white;
+            margin-top: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -186,14 +205,15 @@ height: auto;
         
     <div class="navbar__logo">
       
-      <a href="index.html">토마토 실험실</a>
+      <a href="index.html"><span style="color: red;" >●</span>  토마토 실험실</a>
+    </div>
     </div>
     
     <ul class="navbar__menu">
       <li><a href="home.html">실험실이란</a></li>
       <li><a href="about.html">토마토에 대해</a></li>
-      <li><a href="">추천 토마토</a></li>
-      <li><a href="">토마토 활용법</a></li>
+      <li><a href="cc.html">추천 토마토</a></li>
+      
     </ul>
    
    
@@ -203,7 +223,7 @@ height: auto;
   </nav>
 
     <div class="content">
-        <div class="contentbox2"> <img src="images/b41.jpg" />
+        <div class="contentbox2"> <img src="images/xhxhxh.png" />
             
         </div>
    
@@ -219,6 +239,7 @@ height: auto;
     <p class="p1"> "토마토에 잘 모른다면 토마토에 대해 한 번 알아볼까요?"   </p>
 
     <div class="content"><a href="about.html"><img src="images/TOm.png" style="width: 100px;"></a></div>
+    <div class="footer"> ⓒ2023 Seo Ji-yeon All pictures cannot be copied sithout permission. </div>
 </body>
 <script src="dd.js" defer></script>
 </html>

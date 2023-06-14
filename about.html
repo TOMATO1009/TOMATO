@@ -38,9 +38,9 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: 80px; 
-        
+           
             overflow: hidden;
-            display: flex;
+          
             justify-content: center;
             align-items: center;
 
@@ -48,44 +48,32 @@
         .contentbox2 {
   flex: 2;
   display: flex;
-  width: 50%;
-  height: 100%;
+  width: 900px;
+  height: 500px;
   justify-content: center;
   align-items: flex-start;
   
   margin-right: 10px;
 }
-@media (max-width: 500px) {
-        .contentbox2 {
-            
-            flex: none;
-        }
-    }
+
+
+
 .contentbox2 img {
-    max-width: 40%;
-    max-height: 40%;
+    width: 600px;
+    height: 600px;
     object-fit: contain;
-    
-    margin: auto;
+
 }
 
 .contentbox3 {
   display: block;
-  width: 50%;
-  height: 100%;
- 
+  width: 600px;
+  height: 500px;
+
   margin-left: 150px;
 }
-    
-   
 
-    
-    @media (max-width: 768px) {
-        .contentbox2 {
-            width: 100%;
-            height: auto;
-        }
-    }
+  
     .p {text-align: right;
         margin-bottom: 25px;
 } 
@@ -96,12 +84,98 @@
     font-weight: bold;
     margin-top: 60px; 
 }
+
 .p2 {
     text-align: right;
     font-size: 32px;
     
     margin-top: 60px; 
+    
 }
+@media (max-width: 1375px) {
+  
+  
+  .contentbox3 {
+  margin: 0;
+  }
+  .contentbox2 {
+ margin: 0;
+}
+}
+@media (max-width: 1200px) {
+  .p2{ font-size: 22px;}
+  .p1{ font-size: 40px;}
+  .p{ font-size: 13px;}
+  
+  .contentbox3 {
+ 
+  width: 400px;
+  height: 500px;
+  margin: 0;
+  }
+  .contentbox2 {
+ 
+ width: 400px;
+ height: 500px;
+ margin: 0;
+}
+}
+@media (max-width: 915px) {
+  .p2{ font-size: 18px;}
+  .p1{ font-size: 30px;}
+  .p{ font-size: 10px;}
+  
+  .contentbox3 {
+ 
+  width: 300px;
+  height: 500px;
+  margin: 0;
+  }
+  .contentbox2 {
+ 
+ width: 400px;
+ height: 500px;
+ margin: 0;
+}
+}
+@media (max-width: 715px) {
+  .p1, .p2, .p {
+    text-align: center;
+  }
+  .contentbox3 {
+    display: grid;
+  margin: 0 auto;
+  align-items: center;
+  
+  }
+
+}
+@media (max-width: 615px) {
+  .p1, .p2, .p {
+    text-align: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentbox2 {
+    width: 100%;
+  }
+  .contentbox2 img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.footer {
+            padding: 10px;   
+            background-color: white;
+            margin-top: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -117,7 +191,7 @@
               <li><a href="home.html">실험실이란</a></li>
               <li><a href="about.html">토마토에 대해</a></li>
               <li><a href="cc.html">추천 토마토</a></li>
-              <li><a href="">토마토 활용법</a></li>
+              
             </ul>
            
            
@@ -127,7 +201,7 @@
           </nav>
 
     <div class="content">
-        <div class="contentbox2"> <img src="images/totoma.png" />
+        <div class="contentbox2"> <img src="images/dhks.png" /></div>
             <div class="contentbox3"> 
              <p class="p1">토마토</p> 
              <p class="p2">새콤하고 살짝 단맛이 나는 채소 토마토</p>
@@ -137,15 +211,10 @@
              <p class="p">방울토마토, 완숙토마토, 대추토마토, 짭짤이토마토 등이있다</p>
              <p class="p">토마토에 종류에 따라 맛도 다르기 때문에</p>
              <p class="p">자신의 입맛에 맞는 토마토를 찾아보자!</p>
-
-
-               
-            
-        </div>
-   
-    </pre>
     </div>
-    
+    </div>
+    <div class="content"></div>
+    <div class="footer"> ⓒ2023 Seo Ji-yeon All pictures cannot be copied sithout permission. </div>
 
     
 </body>

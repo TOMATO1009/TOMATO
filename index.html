@@ -47,7 +47,7 @@
 @media (max-width: 375px) {
     body {
         background-size: contain;
-        height: 120vh;
+        height: 800vh;
         background-image: url(images/xhxhak.png);
     }
 }
@@ -60,11 +60,26 @@
   }
 }
 
-@media (max-width: 767px) and (max-width: 4225px) {
+@media (max-width: 767px) and (max-width: 425px) {
   .contentbox2 img {
     width: 70%;
     max-width: none;
     height: auto;
+    
+  }
+}
+
+.footer {
+            padding: 10px;   
+            background-color: white;
+            margin-top: 15px;
+            text-align: center;
+           
+}
+
+        @media (max-width: 768px) {
+  .footer {
+    display: none;
   }
 }
 
@@ -85,7 +100,7 @@
             <li><a href="home.html">실험실이란</a></li>
             <li><a href="about.html">토마토에 대해</a></li>
             <li><a href="cc.html">추천 토마토</a></li>
-            <li><a href="">토마토 활용법</a></li>
+            
           </ul>
          
          
@@ -97,10 +112,12 @@
     
     <div class="content">
         <div class="contentbox2"> 
-            <img src="images/hi.png" style="min-width 100%; max-height:100%; object-fit: contain;" />
+            <img src="images/hi.png">
         </div>
           </div>
-
+          <div class="content"></div>
+          <div class="footer"> ⓒ2023 Seo Ji-yeon All pictures cannot be copied sithout permission. </div>
+          
 </body>
 <script src="dd.js" defer></script>
     

@@ -16,12 +16,21 @@
        
 
     <style>
+        body {
+    
+          background-image: url(images/bk3.png);
+          background-repeat: repeat;
+        
+    
+  }
         .header {
             padding: 30px;   
-            border: 1px solid green;
+           
             margin-bottom: 70px;
             text-align: center;
-            font-size: 70px;
+            font-size: 80px;
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
             
         }
 
@@ -88,10 +97,12 @@
         }
 
         .footer {
-            padding: 60px;   
-            border: 1px solid green;
+            padding: 10px;   
+            background-color: white;
             margin-top: 15px;
+            text-align: center;
         }
+
        
 
         @media screen and (min-width: 1024px) {
@@ -138,19 +149,24 @@
 
             
         }
+        @media screen and (max-width: 425px){
+        .header {
+            font-size: 39px;
+         }   
+        }
 
         @media screen and (max-width: 375px) {
             .section main {
                 margin: 10px;
                 margin-bottom: 20px;
                 height: 40%;
-                font-size: 140%;
+                font-size: 20px;
             }
 
             .section {
                 font-size: 20px;
                 margin: 0%;
-                height: 2700px;
+                height: 2000px;
 
             }
 
@@ -164,58 +180,56 @@
         
         <div class="navbar__logo">
           
-          <a href="index.html">토마토 실험실</a>
+          <a href="index.html"><span style="color: red;" >●</span>  토마토 실험실</a>
         </div>
         
         <ul class="navbar__menu">
           <li><a href="home.html">실험실이란</a></li>
           <li><a href="about.html">토마토에 대해</a></li>
           <li><a href="cc.html">추천 토마토</a></li>
-          <li><a href="">토마토 활용법</a></li>
+          
         </ul>
        
        
         <a href="#" class="navbar__toggleBtn">
           <i class="fas fa-bars"></i>
         </a>
-      </nav> 
+      </nav>
       
-    
-   
     <div class="section">
         <div class="header">
-            <hr>당신의 토마토를 찾아보세요<hr></div>
+            <hr style="border: dotted 2px rgb(112, 0, 0);"><h4>당신의 토마토를 찾아보세요</h4><hr style="border: dotted 2px rgb(122, 0, 0);"></div>
         
             <div class="main-container">
                 <main class="section main"> 
-                    <div class="box1"><img src="images/qkddnf.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box1"><img src="images/qkd.png"style="max-width: 100%; max-height: 100%;" /></div> 
                     <div class="box2"> 방울 토마토</div></main>
                 <main class="section main">
-                    <div class="box1"><img src="images/dhkstnr.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box1"><img src="images/dhks.png"style="max-width: 100%; max-height: 100%;" /></div> 
                     <div class="box2"> 완숙 토마토</div></main>
                 </main>
                 <main class="section main">
-                    <div class="box1"><img src="images/qkddnf.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box1"><img src="images/gmr.png"style="max-width: 100%; max-height: 100%;" /></div> 
                     <div class="box2"> 흑 토마토</div></main>
                 </main> 
                 
             </div>
             <div class="main-container">
                 <main class="section main">
-                    <div class="box1"><img src="images/qkddnf.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box1"><img src="images/eo.png"style="max-width: 100%; max-height: 100%;" /></div> 
                     <div class="box2"> 대추 토마토</div></main>
                 </main>
                 <main class="section main">
-                    <div class="box1"><img src="images/tmsor.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box1"><img src="images/tmsor.png"style="max-width: 100%; max-height: 100%;" /></div> 
                     <div class="box2"> 스낵 토마토</div></main>
                 </main>
                 <main class="section main">
-                    <div class="box1"><img src="images/Wkq.jpg"style="max-width: 100%; max-height: 100%;" /></div> 
+                    <div class="box1"><img src="images/Wkq.png"style="max-width: 100%; max-height: 100%;" /></div> 
                     <div class="box2"> 짭짤이 토마토</div></main></main> 
         </div>
     </div>
     
-    <div class="footer"></div>
+    <div class="footer"> ⓒ2023 Seo Ji-yeon All pictures cannot be copied sithout permission. </div>
 </body>
-<script src="dd.js" defer></script>
+<script src="main.js" defer></script>
 </html>
